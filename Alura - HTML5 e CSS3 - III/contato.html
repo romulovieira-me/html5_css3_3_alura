@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <!--Dicionário-->
+        <meta charset="utf-8">
+        <!--Título da aba-->
+        <title>Contato</title>
+        <!-- Link para o reser.css (a ordem importa)-->
+        <link rel="stylesheet" href="reset.css">
+        <!-- Link com arquivo CSS -->
+        <link rel="stylesheet" href="style.css">
+        
+        
+    </head>
+
+    <body>
+        <!-- Iniciando cabeçalho -->
+        <header>
+            <!-- Criando div para centralizar conteúdo da lista-->
+            <div class="caixa">
+                <!-- Imagem como h1 -->
+                <h1><img src="logo.png" alt="Logo da Barbearia"></h1>
+
+                <nav>
+                <!-- Lista não-ordenada -->
+                    <ul>
+                        <!-- colocando âncora para a página-->
+                        <li> <a href="index3.html">Home </a> </li>
+                        <li> <a href="produto.html">Produtos </a> </li>
+                        <li> <a href="contato.html">Contato </a> </li>
+                    </ul>
+                </nav>
+            </div> 
+        </header>
+
+        <main>
+           <!-- Tag do formulário -->
+           <form>
+                <!-- Tag de input, que recebe dados dos usuário -->
+                <label for="nome"> Nome e sobrenome </label>
+                <input type="text" id="nome" class="input-padrao" required>
+
+                <label for="email"> E-mail </label>
+                <input type="email" id="email" class="input-padrao" required placeholder="email@dominio.com">
+
+                <label for="telefone"> Telefone </label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!-- Utilizar um type ideal ajuda o usuário a preencher os campos quando ele está utilizando um smartphone-->
+
+                <!-- tag de contéudo para texto mais extenso-->
+                <label for="mensagem"> Mensagem </label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>  
+
+                <!-- Radio box -->
+                <fieldset>
+                    <legend> Preferência de contato </legend>
+                    <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email"> E-mail </label>
+
+                    <label for="radio-telefone"> <input type="radio" name="contato" value="email" id="radio-telefone"> Telefone 
+                    </label>
+
+                    <label for="radio-zap"> <input type="radio" name="contato" value="email" id="radio-zap" checked> WhastApp </label>
+                
+                </fieldset>
+                <!-- Fim Radio box -->
+
+                <!-- Seletor -->
+                <fieldset>
+                    <legend> Horário de preferência </legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                <!-- Checkbox -->
+                <label class="checkbox"> <input type="checkbox" checked> Deseja receber nossas novidades por e-mail? </label>
+
+                <!-- Botão submit -->
+                <input type="submit" value="Enviar" class="enviar"> <!-- definindo nome no botão de submissão do formulário -->
+           </form> 
+
+           <!-- Tabela -->
+           <table>
+            <!-- Linha -->
+            <tr></tr>
+                <!-- Cabeçalho -->
+                <thead>
+                    <tr>
+                        <!-- Célula -->
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                        <tr>
+                            <td>Segunda a Quinta</td>
+                            <td> 8h ~ 19h</td>
+                        </tr>
+
+                            <tr>
+                            <td>Sexta</td>
+                            <td> 8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>08 ~ 21h</td>
+                        </tr>
+                </tbody>
+           </table>
+
+        </main>
+
+           <!-- Tag de rodapé-->
+           <footer>
+            <img src="logo-branco.png" alt="Logo da Barbearia">
+            <p class="copyright">&copy; Copyright Barbearia Alura 2023</p> <!-- Linguagem unciode foi utilizada-->
+        </footer>
+    </body>
+
+
+
+
+
+</html>
